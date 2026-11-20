@@ -1,0 +1,58 @@
+{
+    "hardware": {
+        "cpu": "Intel Core i7-13650HX",
+        "ram_gb": 16,
+        "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU 6GB",
+        "operating_system": "Windows 11"
+    },
+    "measurement_method": {
+        "inference_repeats": 5,
+        "classifier_inference_samples": 2459,
+        "cnn_inference_batch_size": 32,
+        "cnn_inference_samples": 32,
+        "yamnet_feature_extraction_samples": 20
+    },
+    "yamnet_feature_extraction": {
+        "audio_samples": 20,
+        "total_seconds": 2.3606224000031943,
+        "average_seconds_per_audio": 0.11803112000015972
+    },
+    "models": [
+        {
+            "model": "YAMNet + SVM",
+            "inference_total_seconds": 6.109706279999955,
+            "inference_ms_per_sample": 2.484630451402991,
+            "total_parameters": null,
+            "trainable_parameters": null,
+            "support_vectors": 2058,
+            "checkpoint_size_mb": 16.395
+        },
+        {
+            "model": "YAMNet + MLP",
+            "inference_total_seconds": 0.10327088000049116,
+            "inference_ms_per_sample": 0.04199710451422983,
+            "total_parameters": 296586,
+            "trainable_parameters": 296586,
+            "support_vectors": null,
+            "checkpoint_size_mb": 3.427
+        },
+        {
+            "model": "MFCC + SVM",
+            "inference_total_seconds": 1.8910411600008956,
+            "inference_ms_per_sample": 0.7690285319239103,
+            "total_parameters": null,
+            "trainable_parameters": null,
+            "support_vectors": 2813,
+            "checkpoint_size_mb": 2.119
+        },
+        {
+            "model": "CNN",
+            "inference_total_seconds": 0.3132632400003786,
+            "inference_ms_per_sample": 9.78947625001183,
+            "total_parameters": 111370,
+            "trainable_parameters": 110922,
+            "support_vectors": null,
+            "checkpoint_size_mb": 1.338
+        }
+    ]
+}

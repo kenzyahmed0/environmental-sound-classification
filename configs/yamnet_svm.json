@@ -1,0 +1,28 @@
+
+{
+    "model_name": "YAMNet + SVM",
+    "feature_extractor": "YAMNet",
+    "selection_metric": "validation_macro_f1",
+    "candidates": [
+        {
+            "C": 1,
+            "kernel": "rbf",
+            "gamma": "scale"
+        },
+        {
+            "C": 10,
+            "kernel": "rbf",
+            "gamma": "scale"
+        },
+        {
+            "C": 30,
+            "kernel": "rbf",
+            "gamma": "scale"
+        },
+        {
+            "C": 10,
+            "kernel": "linear"
+        }
+    ],
+    "class_weight": "balanced"
+}

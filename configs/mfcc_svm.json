@@ -1,0 +1,16 @@
+
+{
+    "model_name": "MFCC + SVM",
+    "feature_extractor": "MFCC",
+    "n_mfcc": 40,
+    "statistics": [
+        "mean",
+        "standard_deviation"
+    ],
+    "svm": {
+        "C": 10,
+        "kernel": "rbf",
+        "gamma": "scale",
+        "class_weight": "balanced"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "selected_model": "YAMNet + SVM",
+    "selection_metric": "validation_macro_f1",
+    "test_samples": 2459,
+    "test_accuracy": 0.7568117120780805,
+    "test_macro_f1": 0.7615405204318936,
+    "test_weighted_f1": 0.754247460384432
+}

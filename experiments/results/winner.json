@@ -1,0 +1,4 @@
+{
+    "selected_model": "YAMNet + SVM",
+    "selection_metric": "validation_macro_f1"
+}

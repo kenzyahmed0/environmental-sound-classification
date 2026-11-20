@@ -1,0 +1,3 @@
+model,validation_accuracy,validation_macro_f1,training_time_seconds
+YAMNet + SVM (with StandardScaler),0.8102625298329356,0.8123875235792808,1.3039591312408447
+YAMNet + SVM (without StandardScaler),0.8066825775656324,0.8049172395275838,1.0756425857543945

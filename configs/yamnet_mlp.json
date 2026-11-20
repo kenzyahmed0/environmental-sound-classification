@@ -1,0 +1,29 @@
+
+{
+    "model_name": "YAMNet + MLP",
+    "feature_extractor": "YAMNet",
+    "selection_metric": "validation_macro_f1",
+    "candidates": [
+        {
+            "hidden_layer_sizes": [256, 128],
+            "alpha": 0.0001,
+            "learning_rate_init": 0.001
+        },
+        {
+            "hidden_layer_sizes": [512, 256],
+            "alpha": 0.0005,
+            "learning_rate_init": 0.001
+        },
+        {
+            "hidden_layer_sizes": [256, 128],
+            "alpha": 0.001,
+            "learning_rate_init": 0.0005
+        }
+    ],
+    "activation": "relu",
+    "solver": "adam",
+    "batch_size": 128,
+    "max_iter": 100,
+    "early_stopping": true,
+    "random_state": 42
+}

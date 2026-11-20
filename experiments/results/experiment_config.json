@@ -1,0 +1,54 @@
+{
+    "dataset": "UrbanSound8K",
+    "random_seed": 42,
+    "split": {
+        "train_folds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "validation_folds": [
+            7
+        ],
+        "test_folds": [
+            8,
+            9,
+            10
+        ]
+    },
+    "models": {
+        "yamnet_svm": {
+            "C": 10,
+            "kernel": "rbf",
+            "gamma": "scale"
+        },
+        "yamnet_mlp": {
+            "hidden_layer_sizes": [
+                256,
+                128
+            ],
+            "alpha": 0.0001,
+            "learning_rate_init": 0.001
+        },
+        "mfcc_svm": {
+            "C": 10,
+            "kernel": "rbf",
+            "gamma": "scale"
+        },
+        "cnn": {
+            "architecture": "CNN",
+            "input": "Log-Mel Spectrogram",
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "maximum_epochs": 30,
+            "early_stopping_patience": 5,
+            "dropout": 0.4
+        }
+    },
+    "selected_model": "YAMNet + SVM",
+    "selection_metric": "validation_macro_f1"
+}
